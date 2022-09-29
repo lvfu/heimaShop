@@ -1,0 +1,65 @@
+Page {
+  background-color: #e9e9e9;
+}
+.problem_class_group .problem_title {
+  padding: 10rpx;
+}
+.problem_class_group .problem_type_item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2%;
+}
+.problem_class_group .problem_type_item .problem_item_title {
+  padding: 10rpx;
+  margin: 10rpx;
+  background-color: white;
+  width: 30%;
+  text-align: center;
+}
+.problem_detail_group {
+  display: flex;
+  margin: 20rpx;
+  padding: 10rpx;
+  background-color: white;
+  flex-direction: column;
+}
+.problem_detail_group .problem_desc_g {
+  padding: 10rpx;
+}
+.problem_detail_group .problem_img_g {
+  display: flex;
+  flex-wrap: wrap;
+}
+.problem_detail_group .problem_img_g button {
+  margin: 0rpx;
+  height: 90rpx;
+  width: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20rpx;
+}
+.problem_detail_group .problem_img_g .problem_img_group {
+  display: flex;
+}
+.problem_detail_group .problem_img_g .problem_img_group UploadImg {
+  margin-left: 20rpx;
+}
+.submit_group {
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 20rpx;
+}
+.submit_group button {
+  margin: 0;
+  background-color: var(--themeColor);
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 30rpx;
+}
+.submit_group button icon {
+  margin-right: 10rpx;
+}

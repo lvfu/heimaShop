@@ -1,0 +1,4 @@
+<view class="img_sel_group">
+  <image src="{{img}}" />
+  <image class="delete_img" src="../../icons/delete.png" bindtap="deleteClickTap" data-index="{{index}}" />
+</view>

@@ -1,0 +1,76 @@
+<view class="top_userinfo_group">
+  <view class="nologin_group" wx:if="{{!userInfo.nickName}}">
+    <navigator url="/pages/login/index">
+      <view class="tologin">登录</view>
+    </navigator>
+  </view>
+  <view class="login_group" wx:else>
+    <image class="user_bg_big" src="../../icons/mine_bac.png" />
+    <view class="userinfo_group">
+      <image src="{{userInfo.avatarUrl}}" mode="widthFix" />
+      <view class="userinfo_nickname">{{userInfo.nickName}}</view>
+    </view>
+  </view>
+</view>
+<!-- 顶部菜单 -->
+<view class="menu_top_group">
+  <view class="menu_top_main">
+    <navigator class="menu_item">
+      <view class="menu_num">0</view>
+      <view class="menu_title">收藏的店铺</view>
+    </navigator>
+    <navigator class="menu_item">
+      <view class="menu_num">0</view>
+      <view class="menu_title">收藏的商品</view>
+    </navigator>
+    <navigator class="menu_item">
+      <view class="menu_num">0</view>
+      <view class="menu_title">关注的商品</view>
+    </navigator>
+    <navigator class="menu_item">
+      <view class="menu_num">0</view>
+      <view class="menu_title">我的足迹</view>
+    </navigator>
+  </view>
+</view>
+<!-- 订单菜单 -->
+<view class="menu_order_group">
+  <view class="menu_order_title">我的订单</view>
+  <view class="menu_order_main">
+    <navigator class="menu_order_item" url="/pages/order/index?type=1">
+      <text class="iconfont icon-quanbudingdan" />
+      <view class="order_title">全部订单</view>
+    </navigator>
+    <navigator class="menu_order_item" url="/pages/order/index?type=2">
+      <text class="iconfont icon-dingdandaifukuan" />
+      <view class="order_title">待付款</view>
+    </navigator>
+    <navigator class="menu_order_item" url="/pages/order/index?type=3">
+      <text class="iconfont icon-daishouhuo" />
+      <view class="order_title">待收货</view>
+    </navigator>
+    <navigator class="menu_order_item" url="/pages/order/index?type=4">
+      <text class="iconfont icon-tuihuozhong" />
+      <view class="order_title">退款/退货</view>
+    </navigator>
+  </view>
+</view>
+<!-- 收货地址 -->
+<view class="menu_addr_group">
+  <view class="menu_addr_title">收货地址管理</view>
+</view>
+<!-- 其他菜单 -->
+<view class="menu_other_group">
+  <view class="menu_addr_group">
+    <view class="menu_addr_title">联系客服</view>
+  </view>
+  <navigator class="menu_addr_group" url="/pages/feedback/index">
+    <view class="menu_addr_title">意见反馈</view>
+  </navigator>
+  <view class="menu_addr_group" bindtap="cleanAllData">
+    <view class="menu_addr_title">关于我们</view>
+  </view>
+</view>
+<view class="menu_addr_group">
+  <view class="menu_addr_title">把应用推荐给其他人</view>
+</view>

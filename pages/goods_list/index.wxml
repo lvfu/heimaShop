@@ -1,0 +1,15 @@
+<SearchInput></SearchInput>
+<Tabs tabs="{{tabDatas}}" bind:tabItemChange="handleTabItemChange"></Tabs>
+<block wx:if="{{tabDatas[0].isSelect}}">
+  <view class="product_group" wx:for="{{goodsList}}" wx:key="goods_id">
+    <navigator url="/pages/goos_detail/index?goods_id={{item.goods_id}}">
+      <view class="product_img">
+        <image src="{{item.goods_small_logo}}" hidden="{{item.goods_small_logo ? false : true}}" mode="widthFix" />
+      </view>
+      <view class="product_content">
+        <view class="product_title">{{item.goods_name}}</view>
+        <view class="product_price">￥{{item.goods_price}}</view>
+      </view>
+    </navigator>
+  </view>
+</block>

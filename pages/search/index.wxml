@@ -1,0 +1,9 @@
+<view class="search_row_group">
+  <input value="{{inputValue}}" class="search_input" placeholder="请输入您要搜索的商品" bindinput="inputChangeListener" />
+  <view class="search_cancel" bindtap="cancelClickListener" hidden="{{!isHaveFouce}}">取消</view>
+</view>
+<view class="search_content_group" wx:for="{{goods}}" wx:key="goods_id">
+  <navigator url="/pages/goos_detail/index?goods_id={{item.goods_id}}">
+    <view class="search_content">{{item.goods_name}}</view>
+  </navigator>
+</view>

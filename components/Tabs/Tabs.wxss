@@ -1,0 +1,16 @@
+.index_tabs {
+  display: flex;
+  background-color: white;
+}
+.index_tabs .tab_group {
+  flex: 1;
+  text-align: center;
+  padding-top: 25rpx ;
+}
+.index_tabs .tab_group .tab_item {
+  padding-bottom: 15rpx;
+}
+.index_tabs .tab_group .active {
+  color: var(--themeColor);
+  border-bottom: 3px solid currentColor;
+}

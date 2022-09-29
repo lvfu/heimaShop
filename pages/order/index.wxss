@@ -1,0 +1,23 @@
+.order_list_group {
+  border-bottom: 1px solid #e9e9e9;
+  padding: 20rpx;
+}
+.order_list_group .order_item_group {
+  display: flex;
+}
+.order_list_group .order_item_group .order_item_title {
+  margin-bottom: 5rpx;
+}
+.order_list_group .order_item_group .order_item_num_data {
+  margin-left: auto;
+  margin-right: 0rpx;
+}
+.order_list_group .order_item_group .order_item_price_data {
+  margin-left: auto;
+  margin-right: 0rpx;
+  color: var(--themeColor);
+}
+.order_list_group .order_item_group .order_item_time_data {
+  margin-left: auto;
+  margin-right: 0rpx;
+}

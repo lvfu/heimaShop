@@ -1,0 +1,16 @@
+<Tabs tabs="{{tabList}}" bindtabItemChange="tabChangeListener"></Tabs>
+<!-- 列表 -->
+<view class="order_list_group" wx:for="{{orders}}" wx:key="order_id">
+  <view class="order_item_group">
+    <view class="order_item_title">订单编号</view>
+    <view class="order_item_num_data">{{item.order_number}}</view>
+  </view>
+  <view class="order_item_group">
+    <view class="order_item_title">订单价格</view>
+    <view class="order_item_price_data">￥{{item.order_price}}</view>
+  </view>
+  <view class="order_item_group">
+    <view class="order_item_title">订单日期</view>
+    <view class="order_item_time_data">{{item.update_time}}</view>
+  </view>
+</view>

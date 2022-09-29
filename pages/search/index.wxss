@@ -1,0 +1,33 @@
+Page {
+  background-color: #e9e9e9;
+}
+Page .search_row_group {
+  margin: 20rpx;
+  display: flex;
+  height: 80rpx;
+}
+Page .search_row_group .search_input {
+  padding-left: 10rpx;
+  height: 100%;
+  flex: 8;
+  background-color: white;
+}
+Page .search_row_group .search_cancel {
+  padding-top: 20rpx;
+  text-align: center;
+  flex: 2;
+  margin-left: 15rpx;
+  color: black;
+  background-color: white;
+}
+.search_content_group {
+  margin: 0 20rpx;
+}
+.search_content_group navigator .search_content {
+  padding: 20rpx 10rpx;
+  background-color: white;
+  border-bottom: 1px solid #e9e9ee;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

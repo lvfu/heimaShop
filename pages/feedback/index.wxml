@@ -1,0 +1,27 @@
+<Tabs tabs="{{tabDatas}}" bind:tabItemChange="handleTabItemChange"></Tabs>
+<view class="problem_class_group">
+  <view class="problem_title">问题的种类</view>
+  <view class="problem_type_item">
+    <view class="problem_item_title">功能建议</view>
+    <view class="problem_item_title">购买遇到问题</view>
+    <view class="problem_item_title">性能问题</view>
+    <view class="problem_item_title">其他</view>
+  </view>
+</view>
+<view class="problem_detail_group">
+  <view class="problem_desc_g">
+    <textarea placeholder="请描述一下你的问题"></textarea>
+  </view>
+  <view class="problem_img_g">
+    <button bindtap="chooseImagTap">+</button>
+    <view class="problem_img_group" wx:for="{{imgs}}" wx:key="*this">
+      <UploadImg img="{{item}}" index="{{index}}" bind:deleteClickTap="deleteClickListener" />
+    </view>
+  </view>
+</view>
+<view class="submit_group">
+  <button>
+    <icon type="success_no_circle" size="23" color="#ffffff" />
+    提交
+  </button>
+</view>

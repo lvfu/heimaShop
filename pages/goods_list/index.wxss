@@ -1,0 +1,32 @@
+.product_group navigator {
+  border-bottom: 2rpx solid #f5f5f5;
+  display: flex;
+}
+.product_group navigator .product_img {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.product_group navigator .product_img image {
+  width: 70%;
+}
+.product_group navigator .product_content {
+  flex: 3;
+  padding-right: 10rpx;
+  /*围绕边框环绕*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.product_group navigator .product_content .product_title {
+  /*多行省略*/
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.product_group navigator .product_content .product_price {
+  color: var(--themeColor);
+  font-size: 30rpx;
+}
